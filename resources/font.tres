@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://vjmfe2n525bp"]
+
+[ext_resource type="FontFile" uid="uid://0k45210hi1mx" path="res://assets/Inter.ttf" id="1_gyirb"]
+
+[resource]
+default_font = ExtResource("1_gyirb")

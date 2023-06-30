@@ -1,0 +1,290 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhpxjachl74oc"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_hikra"]
+[ext_resource type="PackedScene" uid="uid://cakgntxrxog5b" path="res://compositions/1.tscn" id="2_gsv61"]
+[ext_resource type="AudioStream" uid="uid://cqx7b7b1u5y5o" path="res://assets/Make_Me_Mad_Ofrin.mp3" id="2_wxxml"]
+[ext_resource type="PackedScene" uid="uid://b4o04d6nq130r" path="res://compositions/2.tscn" id="4_imlb6"]
+[ext_resource type="PackedScene" uid="uid://c5h47smvgamor" path="res://compositions/3.tscn" id="5_m8rr0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pihno"]
+resource_local_to_scene = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e7ing"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_pihno")
+
+[sub_resource type="Animation" id="Animation_sjfd3"]
+resource_name = "audio"
+length = 8.8
+step = 0.05
+tracks/0/type = "audio"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Music")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"clips": [{
+"end_offset": 1.92201,
+"start_offset": 0.0,
+"stream": ExtResource("2_wxxml")
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": null
+}],
+"times": PackedFloat32Array(0, 8.8)
+}
+tracks/0/use_blend = true
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.8, 3.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("1/MeetLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("1/MeetLabel:theme_override_font_sizes/font_size")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5, 0.8),
+"transitions": PackedFloat32Array(0.105112, 4.28709),
+"update": 0,
+"values": [512, 128]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("2/DBLabel:theme_override_font_sizes/font_size")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.8, 2.5),
+"transitions": PackedFloat32Array(0.148651, 0.203063),
+"update": 0,
+"values": [172, 256]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("2/DBLabel/TextureRect:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2, 2.6),
+"transitions": PackedFloat32Array(0.554785, 0.233258),
+"update": 0,
+"values": [0.0, 3.14159]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("2/DBLabel/TextureRect:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.25, 1.25)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("2/DBLabel/TextureRect:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.8, 1.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("2/TheBrowserLabel:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 2.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("2/DBLabel:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(1.8, 2.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("2/TheBrowserLabel:position")
+tracks/11/interp = 2
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(2.95, 3.15),
+"transitions": PackedFloat32Array(0.406127, 0.120743),
+"update": 0,
+"values": [Vector2(1300, 923.5), Vector2(1194, 923.5)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("3:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 3.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("3/WithPrivacyLabel:position")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(3.8, 4.25),
+"transitions": PackedFloat32Array(0.353553, 1),
+"update": 0,
+"values": [Vector2(1186, 923), Vector2(1186, 800)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("3/AtHeartLabel:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 4.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("3/AtHeartLabel:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(4.9, 5.1),
+"transitions": PackedFloat32Array(0.297302, 1.46409),
+"update": 0,
+"values": [Vector2(1409.5, 1200), Vector2(1409.5, 1100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5nuha"]
+_data = {
+"audio": SubResource("Animation_sjfd3")
+}
+
+[node name="3DComposition" type="Node3D"]
+script = ExtResource("1_hikra")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(3840, 2160)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+current = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.5)
+mesh = SubResource("PlaneMesh_e7ing")
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_5nuha")
+}
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="1" parent="." instance=ExtResource("2_gsv61")]
+visible = false
+
+[node name="MeetLabel" parent="1" index="1"]
+theme_override_font_sizes/font_size = 128
+
+[node name="2" parent="." instance=ExtResource("4_imlb6")]
+visible = false
+
+[node name="ColorRect" parent="2" index="0"]
+layout_mode = 0
+
+[node name="DBLabel" parent="2" index="1"]
+visible = false
+theme_override_font_sizes/font_size = 256
+
+[node name="TextureRect" parent="2/DBLabel" index="0"]
+rotation = 3.14159
+scale = Vector2(1.25, 1.25)
+
+[node name="TheBrowserLabel" parent="2" index="2"]
+offset_left = -726.0
+offset_top = -156.5
+offset_right = 726.002
+offset_bottom = 156.5
+
+[node name="3" parent="." instance=ExtResource("5_m8rr0")]
+
+[node name="ColorRect" parent="3" index="0"]
+layout_mode = 0
+
+[node name="WithPrivacyLabel" parent="3" index="1"]
+offset_left = -734.0
+offset_top = -280.0
+offset_right = 734.0
+offset_bottom = 33.0001
+
+[node name="AtHeartLabel" parent="3" index="2"]
+offset_left = -510.5
+offset_top = 20.0
+offset_right = 510.5
+offset_bottom = 333.0
+
+[editable path="1"]
+[editable path="2"]
+[editable path="3"]
